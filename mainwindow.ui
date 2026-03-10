@@ -6,57 +6,75 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>238</width>
+    <height>165</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="calibrateButton">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>10</y>
-      <width>161</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Calibrate</string>
-    </property>
-   </widget>
-   <widget class="QSpinBox" name="deadzoneSpinBox">
-    <property name="geometry">
-     <rect>
-      <x>80</x>
-      <y>60</y>
-      <width>47</width>
-      <height>26</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QSpinBox" name="sensitivitySpinBox">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>100</y>
-      <width>47</width>
-      <height>26</height>
-     </rect>
-    </property>
-   </widget>
+   <layout class="QFormLayout" name="formLayout_2">
+    <item row="0" column="1">
+     <layout class="QFormLayout" name="formLayout_3">
+      <item row="1" column="0">
+       <widget class="QLabel" name="label">
+        <property name="frameShape">
+         <enum>QFrame::Shape::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Shadow::Raised</enum>
+        </property>
+        <property name="text">
+         <string>Deadzone Adjustment</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QSpinBox" name="deadzoneSpinBox"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="frameShape">
+         <enum>QFrame::Shape::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Shadow::Raised</enum>
+        </property>
+        <property name="text">
+         <string>Motion Sensitivity</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QSpinBox" name="sensitivitySpinBox"/>
+      </item>
+      <item row="0" column="0" colspan="2">
+       <widget class="QPushButton" name="calibrateButton">
+        <property name="text">
+         <string>Calibrate Analogue Sticks</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>238</width>
      <height>22</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuESP32_BLE_GAMEPAD_MANAGER">
+    <property name="title">
+     <string>ESP32 BLE GAMEPAD MANAGER</string>
+    </property>
+   </widget>
+   <addaction name="menuESP32_BLE_GAMEPAD_MANAGER"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>

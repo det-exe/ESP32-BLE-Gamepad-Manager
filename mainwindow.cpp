@@ -8,6 +8,8 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
+    ui->sensitivitySpinBox->setMaximum(10);
+
     serial.setPortName("/dev/ttyUSB0");
     serial.setBaudRate(QSerialPort::Baud115200);
 }
