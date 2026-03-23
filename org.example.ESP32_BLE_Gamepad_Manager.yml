@@ -8,6 +8,7 @@ finish-args:
   - --socket=fallback-x11
   - --socket=wayland
   - --device=all
+  - --filesystem=/run/udev:ro
 modules:
   - name: ESP32_BLE_Gamepad_Manager
     buildsystem: cmake-ninja

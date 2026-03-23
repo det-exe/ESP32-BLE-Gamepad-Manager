@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QSerialPort>
+#include <QSerialPortInfo>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -20,11 +21,13 @@ private slots:
     void on_calibrateButton_clicked();
     void on_deadzoneSpinBox_valueChanged(int value);
     void on_sensitivitySpinBox_valueChanged(int value);
+    void on_connectButton_clicked();
 
 private:
     Ui::MainWindow *ui;
     QSerialPort serial;
     void sendCommand(const QString &command);
+    void populateSerialPorts();
 };
 
 #endif

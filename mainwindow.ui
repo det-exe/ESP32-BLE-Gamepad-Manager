@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>238</width>
-    <height>165</height>
+    <width>324</width>
+    <height>246</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,7 +17,7 @@
    <layout class="QFormLayout" name="formLayout_2">
     <item row="0" column="1">
      <layout class="QFormLayout" name="formLayout_3">
-      <item row="1" column="0">
+      <item row="2" column="0">
        <widget class="QLabel" name="label">
         <property name="frameShape">
          <enum>QFrame::Shape::StyledPanel</enum>
@@ -30,10 +30,10 @@
         </property>
        </widget>
       </item>
-      <item row="1" column="1">
+      <item row="2" column="1">
        <widget class="QSpinBox" name="deadzoneSpinBox"/>
       </item>
-      <item row="2" column="0">
+      <item row="3" column="0">
        <widget class="QLabel" name="label_2">
         <property name="frameShape">
          <enum>QFrame::Shape::StyledPanel</enum>
@@ -46,13 +46,23 @@
         </property>
        </widget>
       </item>
-      <item row="2" column="1">
+      <item row="3" column="1">
        <widget class="QSpinBox" name="sensitivitySpinBox"/>
       </item>
-      <item row="0" column="0" colspan="2">
+      <item row="1" column="0" colspan="2">
        <widget class="QPushButton" name="calibrateButton">
         <property name="text">
          <string>Calibrate Analogue Sticks</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QComboBox" name="portComboBox"/>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="connectButton">
+        <property name="text">
+         <string>Connect to Port</string>
         </property>
        </widget>
       </item>
@@ -65,7 +75,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>238</width>
+     <width>324</width>
      <height>22</height>
     </rect>
    </property>
