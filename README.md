@@ -18,16 +18,8 @@ The application connects to the gamepad over USB serial and sends runtime config
 - Qt 5 or Qt 6
 - Qt SerialPort
 - CMake
-- Flatpak and flatpak-builder, if building the Flatpak
+- Flatpak and flatpak-builder
 - ESP32 BLE Gamepad running the matching firmware
-
-## Native build and run
-
-```bash
-cmake -B build
-cmake --build build
-./build/ESP32_BLE_Gamepad_Manager
-```
 
 ## Flatpak build, install and run
 
@@ -56,6 +48,3 @@ The application sends the following commands to the firmware:
 
 Calibration prompts are currently printed by the firmware over serial rather than displayed directly in the GUI.
 
-## Licence
-
-MIT Licence.
