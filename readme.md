@@ -1,1 +1,0 @@
-flatpak run org.example.ESP32_BLE_Gamepad_Manager
